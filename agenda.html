@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Conference Schedule</title>
+    <link rel="stylesheet" href="agenda.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to the Online Conference</h1>
+            <p>Explore the agenda below and join the sessions from anywhere.</p>
+        </div>
+    </header>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section">
+        <div class="container">
+            <!-- Day Tabs -->
+            <div class="tabs">
+                <button class="tab-button active" onclick="showDay('day1')">Day 1</button>
+                <button class="tab-button" onclick="showDay('day2')">Day 2</button>
+                <button class="tab-button" onclick="showDay('day3')">Day 3</button>
+            </div>
+
+            <!-- Schedule Content -->
+            <div id="day1" class="tab-content active">
+                <h3>Day 1 - Opening & Keynotes</h3>
+                <div class="schedule-cards">
+                    <div class="schedule-card">
+                        <h4>09:00 AM session - Opening Ceremony</h4>
+                        <a href="https://zoom.us/opening-ceremony" target="_blank" class="button">Register</a>
+                    </div>
+                    <div class="schedule-card">
+                        <h4>10:00 AM session- Keynote: Engineering & Technology</h4>
+                        
+                        <a href="https://zoom.us/keynote1" target="_blank" class="button">Register</a>
+                    </div>
+                    <div class="schedule-card">
+                        <h4>02:00 PM session - Workshop: Engineering and Technology</h4>
+                        <a href="https://zoom.us/workshop1" target="_blank" class="button">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="day2" class="tab-content">
+                <h3>Day 2 - Paper Presentations</h3>
+                <div class="schedule-cards">
+                    <div class="schedule-card">
+                        <h4>09:30 AM session- Session: Mathematics and Statistics</h4>
+                        <a href="https://zoom.us/session1" target="_blank" class="button">Register</a>
+                    </div>
+                    <div class="schedule-card">
+                        <h4>11:00 AM session- Panel Discussion: Mathematics</h4>
+                        <a href="https://zoom.us/panel1" target="_blank" class="button">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="day3" class="tab-content">
+                <h3>Day 3 - Closing Events</h3>
+                <div class="schedule-cards">
+                    <div class="schedule-card">
+                        <h4>10:00 AM session- Keynote: Business and Economics</h4>
+                      
+                        <a href="https://zoom.us/keynote2" target="_blank" class="button">Register</a>
+                    </div>
+                    <div class="schedule-card">
+                        <h4>01:00 PM session- Closing Remarks</h4>
+                        <a href="https://zoom.us/closing-remarks" target="_blank" class="button">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="agenda.js"></script>
+</body>
+</html>

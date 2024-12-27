@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<!-- soccer/project/  07 Jan 2020 03:36:49 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+<title>IRC</title>
+
+<!-- Bootstrap Core and vandor -->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Plugins css -->
+<link rel="stylesheet" href="assets/plugins/charts-c3/c3.min.css"/>
+
+<!-- Core css -->
+<link rel="stylesheet" href="assets/css/main.css"/>
+<link rel="stylesheet" href="assets/css/theme1.css"/>
+</head>
+
+<body class="font-montserrat">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+    </div>
+</div>
+
+<div id="main_content">
+
+    <div id="header_top" class="header_top">
+        <div class="container">
+            <div class="hleft">
+                <a class="header-brand" href="index-2.html"><i class="fa fa-soccer-ball-o brand-logo"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div id="left-sidebar" class="sidebar ">
+        <h5 class="brand-name">Soccer <a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+        <nav id="left-sidebar-nav" class="sidebar-nav">
+            <ul class="metismenu">
+                <li class="active"><a href="admindashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>                        
+                <li><a href="sessions.html"><i class="fa fa-list-ul"></i><span>Sessions</span></a></li>
+                <li><a href="project-ticket-details.html"><i class="fa fa-user"></i><span>Participants</span></a></li>
+                <li><a href="app-calendar.html"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
+            </ul>
+        </nav>        
+    </div>
+
+    <div class="page">
+        <div id="page_top" class="section-body top_dark">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
+                        <h1 class="page-title">Participants</h1>                        
+                    </div>
+                    <div class="right">
+                        <div class="input-icon xs-hide mr-4">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-icon-addon"><i class="fe fe-search"></i></span>
+                        </div>
+                        <div class="notification d-flex">
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body mt-3">
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex justify-content-between">
+                                    <ul class="nav nav-tabs b-none">
+                                        <li class="nav-item"><a class="nav-link active" id="list-tab" data-toggle="tab" href="#list"><i class="fa fa-list-ul"></i> List</a></li>
+                                        <li class="nav-item"><a class="nav-link" id="grid-tab" data-toggle="tab" href="#grid"><i class="fa fa-th"></i> Grid</a></li>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="list" role="tabpanel">
+                        <div class="row clearfix">
+                            <div class="col-lg-12">
+                                <div class="table-responsive" id="users">
+                                    <table class="table table-hover table-vcenter text-nowrap table_custom border-style list">
+                                        <tbody>
+                                            <tr class="">
+                                                <td class="width35 hidden-xs">
+                                                    <a href="javascript:void(0);" class="mail-star"><i class="fa fa-star"></i></a>
+                                                </td>
+                                                <td class="text-center width40">
+                                                    <div class="avatar d-block">
+                                                        <img class="avatar" src="assets/images/xs/avatar4.jpg" alt="avatar">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div><a href="javascript:void(0);">John Smith</a></div>
+                                                    <div class="text-muted">+264-625-2583</div>
+                                                </td>
+                                                <td class="hidden-xs">
+                                                    <div class="text-muted">johnsmith@info.com</div>
+                                                </td>
+                                                <td class="hidden-sm">
+                                                    <div class="text-muted">455 S. Airport St. Moncks Corner, SC 29461</div>                                                
+                                                </td>
+                                                <td class="text-right">
+                                                    <a class="btn btn-sm btn-link" href="javascript:void(0)" data-toggle="tooltip" title="Phone"><i class="fa fa-phone"></i></a>
+                                                    <a class="btn btn-sm btn-link" href="javascript:void(0)" data-toggle="tooltip" title="Mail"><i class="fa fa-envelope"></i></a>
+                                                    <a class="btn btn-sm btn-link hidden-xs js-sweetalert" data-type="confirm" href="javascript:void(0)" data-toggle="tooltip" title="Delete"><i class="fa fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="grid" role="tabpanel">
+                        <div class="row row-deck">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card " >
+                                    <div class="card-body">
+                                        <div class="card-status bg-blue"></div>
+                                        <div class="mb-3"> <img src="assets/images/sm/avatar1.jpg" class="rounded-circle w100" alt=""> </div>
+                                        <div class="mb-2">
+                                            <h5 class="mb-0">Paul Schmidt</h5>
+                                            <p class="text-muted">Aalizeethomas@info.com</p>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt</span>
+                                        </div>
+                                        <span class="font-12 text-muted">Common Contact</span>
+                                        <ul class="list-unstyled team-info margin-0 pt-2">
+                                            <li><img src="assets/images/xs/avatar1.jpg" alt="Avatar"></li>
+                                            <li><img src="assets/images/xs/avatar8.jpg" alt="Avatar"></li>
+                                            <li><img src="assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          
+                           
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script src="assets/bundles/lib.vendor.bundle.js"></script>
+
+<script src="assets/bundles/apexcharts.bundle.js"></script>
+<script src="assets/bundles/counterup.bundle.js"></script>
+<script src="assets/bundles/knobjs.bundle.js"></script>
+<script src="assets/bundles/c3.bundle.js"></script>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/page/project-index.js"></script>
+</body>
+
+<!-- soccer/project/  07 Jan 2020 03:37:22 GMT -->
+</html>
